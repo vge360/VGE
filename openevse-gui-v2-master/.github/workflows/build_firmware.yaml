@@ -1,0 +1,22 @@
+name: Build gui
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}
+          submodules: recursive
+      - name: Install dependencies
+        run: |
+          npm install
+      - name: Build GUI
+        run: |
+          npm run build

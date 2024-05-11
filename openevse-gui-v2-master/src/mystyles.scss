@@ -1,0 +1,125 @@
+// @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+// brand colors
+
+$beige: #fbf9ed;
+$blue: hsl(189, 53%, 47%);
+$turquoise: #1ecaad;
+$green: #3fd290;
+$green-lighter: #7af79d;
+$blue-dark: hsl(195, 78%, 30%);
+$blue-darker: hsl(195, 75%, 22%);
+$cyan: #32b3d4;
+$celeste: hsla(177, 71%, 81%, 1);
+$yellow: rgb(235, 224, 9);
+
+// Update Bulma's global variables
+
+// $light: $beige;
+$info: $cyan;
+$link: $cyan;
+$dark: $blue-dark;
+$primary: $green;
+$primary-invert: white;
+$dark-invert: white;
+$success: $green-lighter;
+$warning: $yellow;
+$text: $blue-dark;
+$body-color: $dark;
+
+
+
+
+@import "../node_modules/bulma/sass/utilities/_all";
+@import "../node_modules/bulma/sass/base/_all";
+@import "../node_modules/bulma/sass/elements/_all";
+@import "../node_modules/bulma/sass/form/_all";
+@import "../node_modules/bulma/sass/grid/_all";
+@import "../node_modules/bulma/sass/helpers/_all";
+@import "../node_modules/bulma/sass/utilities/_all";
+@import "../node_modules/bulma/sass/components/level";	
+@import "../node_modules/bulma/sass/components/modal";
+@import "../node_modules/bulma/sass/components/tabs";
+@import "../node_modules/bulma/sass/components/message";
+
+// Update some of Bulma's component variables
+// $body-overflow-y: auto;
+$pageloader-opacity: 1;
+$breadcrumb-item-active-color: $info;
+$tabs-link-active-color: $info;
+$tabs-link-active-border-bottom-color: $info;
+$tabs-toggle-link-active-color: $info;
+$tabs-toggle-link-active-border-color: $info;
+$tabs-toggle-link-active-background-color: $grey-light;
+$navbar-padding-vertical: 0rem;
+$breadcrumb-item-hover-color: $grey-light;
+$breadcrumb-item-color: $text;
+
+@import "../node_modules/bulma-slider/src/sass/index";
+@import "../node_modules/bulma-switch/src/sass/index";
+@import "../node_modules/@creativebulma/bulma-tooltip/src/sass/index";
+@import "../node_modules/bulma-checkbox/bulma-checkbox";
+
+* {
+	box-sizing: border-box;
+  }
+
+  
+// body::-webkit-scrollbar { display: none; }
+
+
+body {
+	// -ms-overflow-style: none;  /* IE and Edge */
+	// scrollbar-width: none;     /* Firefox */
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background: linear-gradient(hsl(195, 78%, 30%), hsl(189, 53%, 47%));
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100vw;
+	overscroll-behavior-y: contain;
+}
+
+html {
+	overflow: hidden;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+	background: none;
+	width: 5px;
+}
+
+::-webkit-scrollbar-track:hover {
+	background: #fbf9ed;
+	
+}
+	
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+	// background: hsl(189, 53%, 47%);
+	background:  #32b3d4;;
+	border-radius: 8px;
+	
+}
+
+@media screen and (max-width: 768px){
+	::-webkit-scrollbar {
+		-webkit-appearance: none;
+		display: none;
+	}
+  }
+
+
+* {
+scrollbar-color: hsl(189, 53%, 47%) white;
+scrollbar-width: thin;
+}
+
